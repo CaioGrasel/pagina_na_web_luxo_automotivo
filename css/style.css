@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'nevermind';
+    src: url(../fonts/nevermind-bauhaus/NeverMindBauhaus-Regular.ttf) format('opentype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'nervermind';
+    src: url(../fonts/nevermind-bauhaus/NeverMindBauhaus-Bold.ttf) format('opentype');
+    font-weight: 700;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+   --white-text-color: #EDEDED;
+   --highlighted-color: #FFC832;
+   --background-color-strong-black: #111111;
+   --background-color-moderate-black: #1C1B1B;
+   --background-color-soft-black: #313131;
+}
+
+body{
+    width: 100%;
+    margin: auto;
+    background-color: var(--background-color-moderate-black);
+}
+
+header{
+    width: 1920px;
+    height: 744px;
+    background-image: url(../images/Background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header>nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 136px;
+    height: 100px;
+
+    background: linear-gradient(180deg, rgba(64, 63, 63, 0.50) -332.5%, rgba(28, 27, 27, 0.50) 100%);
+    background-blend-mode: overlay;
+    backdrop-filter: blur(35px);
+}
+
+
+.nav-text{
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.nav-texts>ul{
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    color: #EDEDED;
+    font-family: 'Outfit';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+li{
+    text-decoration: none;
+    list-style: none;
+}
+
+.button-nav{
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.button-secundary{
+    font-family: 'Outfit';
+    color: var(--white-text-color);
+    padding: 10px;
+    font-weight: 700;
+    justify-content: center;
+    text-align: center;
+    width: 160px;
+    height: 46px;
+
+    border-radius: 4.998px;
+    border: 1.146px solid #B0B0B0;
+}
+
+.button-primary-nav{
+    font-family: 'Outfit';
+    color: var(--background-color-strong-black);
+    font-weight: 700;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    width: 160px;
+    height: 46px;
+
+    border-radius: 4.998px;
+    border: 2px solid rgba(255, 255, 255, 0.51);
+    background: #FFC832;
+}
+
+
