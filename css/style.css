@@ -139,3 +139,102 @@ span{
     border: 2px solid rgba(255, 255, 255, 0.51);
     background: #FFC832;
 }
+
+/* A partir daqui são declarações do MAIN */
+
+.section-carrossel{
+    background-color: var(--background-color-strong-black);
+    display: flex;
+    flex-flow: column;
+    width: 1920px;
+    height: 861px;
+    justify-content: center;
+    align-items: center;
+    gap: 58px;
+}
+
+.carrossel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 34px;
+    align-self: stretch;
+}
+
+.card-carrossel{
+    display: flex;
+    width: 450px;
+    height: 485px;
+    padding: 2px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 31px;
+    
+    border-radius: 15px;
+    border: 2px solid #2E2E2E;
+    background: #1F1F1F;
+}
+
+figcaption{
+    display: flex;
+    padding: 0px 42px;
+    gap: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'outfit';
+}
+
+.titulo-card{
+    color: #FFF;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.pessoas-card{
+    color: #FFF;
+    font-family: Outfit;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.preço-card{
+    color: #FFC832;
+    font-family: Outfit;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 200;
+}
+
+.section-carrossel>h2{
+    color: #EDEDED;
+    text-align: center;
+    font-family: "NeverMind Bauhaus";
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 61.864px; /* 114.562% */
+}
+
+.carrossel-dots{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.dot{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--background-color-soft-black);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.dot:hover{
+    transform: scale(1.2);
+}
+
+.active{
+    background-color: var(--highlighted-color);
+}
